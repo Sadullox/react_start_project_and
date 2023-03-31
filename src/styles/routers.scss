@@ -1,0 +1,48 @@
+@import 'constants';
+
+body, #root {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.golbal_router{
+    width: 100vw;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: row !important;
+    .active{
+        flex: 0 0 $layout_menue_size !important; 
+        max-width: $layout_menue_size !important; 
+        min-width: $layout_menue_size !important; 
+        width: $layout_menue_size !important;
+    }
+    .router_sider{
+        background-color: $layout_menue_color_left;
+        .router_logo{
+            height: $layout_menue_size;
+            background-color: #4f595a;
+        }
+        .sider_menu{
+            background-color: $layout_menue_color_left;
+        }
+    }
+    .site-layout {
+        .router_header{
+            height: $layout_menue_size !important;
+            padding-left:12px;
+            padding-right:12px;
+            background-color: $layout_menue_color;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .layout_content{
+            // margin: 16px 8px;
+            background-color: #dde2e0;
+            padding: 8px 8px;
+            height: calc(100vh - #{$layout_menue_size});
+        }
+    }
+}

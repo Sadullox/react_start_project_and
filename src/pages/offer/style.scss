@@ -1,0 +1,328 @@
+// :root {
+//   --back-color: #dde2e0;
+//   --table-row-color: #f8f9f3;
+//   // --order-color: #606c6e;
+// }
+
+// .order__page {
+//   overflow: hidden;
+//   background-color: var(--back-color);
+// }
+
+// .order__header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   border-bottom: 1px solid #f1f1f1;
+//   background-color: #fff;
+//   height: 40px;
+
+//   .cars__info {
+//     display: flex;
+//     align-items: center;
+//     padding-right: 24px;
+
+//     .cars {
+//       display: flex;
+//       align-items: center;
+//       border: 1px solid #ccc;
+//       padding: 5px 10px;
+//       border-radius: 5px;
+
+//       .car {
+//         display: flex;
+//         align-items: center;
+//         cursor: pointer;
+//         position: relative;
+
+//         span {
+//           margin-left: 5px;
+//           font-size: 18px;
+//         }
+
+//         &:first-child {
+//           padding-right: 10px;
+//           position: relative;
+
+//           &::after {
+//             content: "|";
+//             position: absolute;
+//             right: 0;
+//             bottom: 2px;
+//             color: #f1f1f1;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// sup {
+//   position: absolute;
+//   top: -8px;
+//   right: -15px;
+//   background-color: #f1f1f1;
+//   padding: 0 3px;
+//   font-size: 12px;
+//   border: 1px solid rgb(255, 255, 255);
+//   border-radius: 2px;
+//   font-weight: 500;
+//   color: cadetblue;
+//   line-height: 15px;
+// }
+
+// .order__filter_bar {
+//   width: 97%;
+//   margin: 10px auto;
+//   border: 1px solid #ccc;
+//   height: 125px;
+//   border-radius: 5px;
+//   overflow: hidden;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+
+//   .filter__conveyor {
+//     padding: 5px;
+//     background-color: #ffffff;
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .filter__bar {
+//     padding: 5px;
+//     margin-top: 1px;
+//     background-color: var(--table-row-color);
+//   }
+
+//   .filter__btns {
+//     display: flex;
+//     align-items: center;
+
+//     .filter_btn {
+//       display: flex;
+//       align-items: center;
+//       flex-direction: column;
+//       margin: 5px 5px 0 5px;
+//       cursor: pointer;
+
+//       svg {
+//         width: 20px;
+//         height: 20px;
+//         fill: var(--order-color);
+
+//         path {
+//           fill: var(--order-color);
+//         }
+//       }
+//     }
+
+//     .active__filter_btn {
+//       svg {
+//         fill: #48c6e8;
+
+//         path {
+//           fill: #48c6e8;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .order__body {
+//   margin: 0 auto;
+//   width: 97%;
+//   display: flex;
+//   justify-content: space-between;
+//   overflow: auto;
+//   /* ---------------------------------- list ---------------------------------- */
+//   .order__list {
+//     overflow: auto;
+//     width: 67.8%;
+//     position: relative;
+//     height: calc(100vh - 230px);
+//     min-width: 700px;
+//     cursor: pointer;
+//     border-radius: 10px;
+
+//     .ant-table-thead {
+//       position: sticky;
+//       top: 0;
+//       z-index: 1;
+//     }
+//   }
+
+//   .row-executor {
+//     svg {
+//       width: 1.5em;
+//       height: 1.5em;
+//     }
+
+//     .racing-controller {
+//       fill: #606c6e;
+//     }
+
+//     .executor {
+//       margin-left: 10px;
+
+//       div {
+//         b {
+//           display: block;
+//           line-height: 15px;
+//         }
+//       }
+//     }
+//   }
+
+//   /* ---------------------------------- view ---------------------------------- */
+
+//   .order__view {
+//     width: 31.8%;
+//     min-width: 400px;
+
+//     .header {
+//       background-color: #fff;
+//       height: 50px;
+//       display: flex;
+//       align-items: center;
+//       padding: 10px;
+//       border-radius: 3px;
+//     }
+
+//     .header__btn {
+//       svg {
+//         fill: #fff;
+
+//         path {
+//           fill: #fff;
+//         }
+//       }
+
+//       &:hover {
+//         opacity: 0.7;
+//       }
+//     }
+//   }
+
+//   .header__content {
+//   }
+
+//   /* ---------------------------------- cell ---------------------------------- */
+
+//   .cell__clock {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     color: var(--back-color);
+
+//     .phone {
+//       width: 20px;
+//       height: 20px;
+//       color: #a8a8a8;
+//     }
+
+//     .clock {
+//       font-size: 13px;
+//       font-weight: 500;
+//       color: #ccc;
+//     }
+//   }
+
+//   .order__status {
+//     justify-content: space-between;
+
+//     svg {
+//       margin: 0 auto;
+//       width: 1.5em;
+//       height: 1.5em;
+//     }
+//   }
+// }
+
+// .order__view {
+//   .ant-collapse {
+//     border: none !important;
+//   }
+
+//   .content {
+//     padding: 10px;
+//     border-radius: 5px;
+//     margin: 1px 0;
+
+//     .d-flex {
+//       display: flex;
+//       align-items: center;
+
+//       span {
+//         margin-left: 5px;
+//       }
+//     }
+
+//     div {
+//       border: none;
+//     }
+
+//     .ant-collapse-header {
+//       padding: 0;
+//       width: 100%;
+//       border: none;
+//     }
+
+//     .ant-collapse-content-box {
+//       padding: 0;
+//       border: none;
+//       background-color: transparent;
+//     }
+
+//     .ant-descriptions-item {
+//       padding-bottom: 3px;
+//     }
+//   }
+
+//   .main-content {
+//     .collapse__body {
+//       span {
+//         color: #606c6e !important;
+//         font-size: 14px;
+//         font-weight: 500;
+//       }
+//     }
+
+//     .collapse-header,
+//     .ant-descriptions-title {
+//       font-size: 16px;
+//       font-weight: 500;
+//       color: #606c6e !important;
+//       font-size: 16px;
+//       font-weight: 500;
+//     }
+//   }
+
+//   .contents {
+//     div {
+//       background-color: var(--table-row-color);
+//     }
+//   }
+
+//   .ant-descriptions-header {
+//     margin-bottom: 4px;
+//   }
+// }
+
+// .svg {
+//   color: rgb(255, 208, 0);
+//   width: 1.2em;
+//   height: 1.2em;
+// }
+
+// .d-flex {
+//   display: flex;
+//   align-items: center;
+// }
+
+// /* ---------------------------------- modal --------------------------------- */
+
+
+.offer_page{
+  
+}

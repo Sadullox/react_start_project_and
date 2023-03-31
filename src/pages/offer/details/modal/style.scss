@@ -1,0 +1,130 @@
+.order__modal {
+  margin-top: -50px;
+
+  .ant-modal-content {
+    width: 1103px;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .ant-modal-close {
+      display: none;
+    }
+
+    .ant-modal-footer {
+      display: none;
+    }
+
+    .ant-modal-body {
+      height: 100%;
+    }
+  }
+
+  .order__info {
+    height: 77%;
+    display: flex;
+
+    .order__info_aside {
+      height: 100%;
+      border-right: 1px solid #f1f1f1;
+      padding: 10px;
+
+      .ant-input-group-wrapper {
+        input {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .order__info_addresses {
+      height: 100%;
+      padding: 10px;
+
+      .date {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .order__address {
+    .ant-tag {
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .ant-input-group {
+      display: flex;
+    }
+
+    .ant-select {
+      width: inherit;
+    }
+
+    .ant-select-selection-item {
+      opacity: 0.4;
+      font-weight: 500;
+    }
+
+    .ant-btn {
+      padding: 5px 8px;
+    }
+  }
+
+  .star__address {
+    display: none;
+    color: yellow;
+  }
+
+  .from__select {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .ant-form-item {
+    margin-bottom: 5px;
+  }
+
+  .order__footer {
+    height: 80px;
+    background: var(--back-color);
+
+    .price__block {
+      padding: 10px 15px;
+    }
+  }
+
+  .order__footer_btns {
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 20px;
+
+    button {
+      position: relative;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .cancel {
+      background: #ffb913;
+      color: #fff;
+      border: none;
+    }
+
+    .save {
+      background: #2bd1f2;
+    }
+  }
+}
+
+.address_map {
+  .ant-modal-footer {
+    margin-top: 0;
+  }
+}
